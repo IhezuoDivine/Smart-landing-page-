@@ -1,0 +1,337 @@
+ *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:hsl(330, 40%, 81%);
+    --text-color:black;
+}
+body{
+    background-color: black;
+}
+.one{
+    background:conic-gradient( red , black, pink) ;
+    z-index:-1 ;
+    animation: rotate 2s linear infinite;
+    padding: 2%;
+}
+@keyframes rotate {
+    0%{
+       transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+header{
+    position: fixed;
+    width: 100%;
+    display:block;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+    height: 140px;
+    overflow: hidden;
+    color: var(--text-color);
+    background-color:var(--bg-color);
+    cursor: pointer;
+    z-index: 100;
+}
+@media screen and (min-width:750px){
+    header{
+        display:flex;
+        justify-content: space-between;
+        width: 100%;
+        height:60px;
+    }
+    #home{
+        padding-top:80px;
+    }
+}
+@media screen and (max-width:400px){
+    header{
+        height: 140px;
+    }
+    .homepage{
+        padding-top: 160px;
+    }
+}
+.circles{
+    margin-top: 2%;
+    padding: 20px;
+    position: relative;
+    transform: translateX(-40% ) rotate(180deg);
+    transform-origin: center;
+}
+.R{
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.6;
+    mix-blend-mode: multiply;
+}
+.one {
+    top: 5px;
+    left: 45px;
+}
+.two{
+    top: 5px;
+    left: 25px;
+}
+.three{
+    top: 20px;
+    left: 35px;
+}
+nav a{
+    color: black;
+}
+nav{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.divarrow a{
+    color:var(--bg-color);
+}
+.arrow{
+    font-weight: bolder;
+    padding: 5px;
+    background-color: black;
+    border-radius: 50%;
+}
+.signin{
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 50px;
+}
+nav a:hover{
+    color:white;
+}
+.divarrow a:hover{
+    color: var(--bg-color);
+}
+.homepage{
+    padding-top: 160px;
+    min-height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    overflow: hidden;
+    background-color: var(--bg-color);
+}
+.homepagecontainer{
+    margin-bottom: 15%;
+}
+.box1{
+    display: block;
+    width: 100%;
+}
+.box1container{
+    padding: 7%;
+    background-color: black;
+    color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.box1 h4{
+    font-size: 20px;
+}
+.box1p{
+    border-top:5px solid yellow;
+    border-right: 5px solid yellow;
+    border-bottom: 5px solid yellow ;
+    border-left: 5px solid black;
+    padding:25px;
+    margin: 5%;
+    border-radius: 50%;
+}
+.box1pp{
+    border:5px solid hsl(330, 40%, 81%);
+    margin: 8% 25px;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+}
+.box1 p{
+    font-size: 18px;
+}
+.box1 h1{
+    width: 100%;
+    right: 70%;
+    font-size: 4rem;
+}
+
+.box2{
+    display: block;
+    width: 100;
+    z-index:1;
+}
+.toformcontainer{
+    margin-top: 10%;
+    text-align: center;
+    align-items: center;
+} 
+
+.toform{
+    position: absolute;
+    height:100px;
+    width: 100px;
+    display: flex;
+    left: 40%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    background: conic-gradient(red, pink ,black, white );
+    animation: rotate 2s linear infinite;
+    z-index: 1;
+}
+.to{
+    position: absolute;
+    padding: 20px;
+    left: 40%;
+    color: white;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+@keyframes rotate {
+   0%{
+    transform: rotate(0deg);
+   }
+   100%{
+    transform: rotate(360deg);
+   }
+}
+
+.imageview{
+    padding-top: 30%;
+    display: flex;
+    justify-content:center;
+}
+.imageview img{
+    height: 300px ;
+    width: 300px;
+    z-index: 5;
+}
+.box3{
+    display: block;
+    width: 100%;
+}
+.clientbox{
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom:5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    background-color:var(--bg-color);
+}
+.justthebox{
+    position: relative;
+    left: 25%;
+    margin-bottom: -180px;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background: hsl(330, 40%, 60%);
+    z-index: 1;
+}
+.mainclientbox{
+    position:relative;
+    border-radius: 10px;
+    left: 25%;
+    margin-bottom: 15%;
+    width:200px;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    transform: rotate(350deg);
+    z-index: 2;
+}
+.totalcl1{
+    margin-top: 15%;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid hsl(330, 40%, 81%);
+    border-radius: 50%;
+}
+.totalcl{
+    margin-top: 10%;
+    display:flex;
+    justify-content: center;
+}
+.skills{
+    margin-top: 15%;
+}
+.skills a{
+    display: inline-block;
+    margin-top: 5%;
+    border:2px solid black;
+    color: black;
+    padding: 5px 10px;
+    font-size:18px;
+    border-radius: 50px;
+}
+.skills a:hover{
+    background-color: black;
+    color: white;
+}
+.displayflexbox{
+    display: block;
+    margin-bottom:-10%;
+}
+@media (min-width:750px){
+    .displayflexbox{
+        display:flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+        padding: 5%;
+        margin-bottom: -15%;
+        flex: 1;
+    }
+    .box1container{
+        margin: 0% auto;
+    }
+    .box2{
+        margin-top: -20%;
+    }
+    .box3{
+        margin-top: -35%;
+    }
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+    .imageview{
+        margin-top: 10%;
+    }
+    .clientbox{
+        width: 300px;
+        align-items: center;
+        text-align: center;
+    }
+}
+.project{
+    background-color: white;
+    width: 58%;
+    border-radius: 10px 10px 0 ;
+    font-size: 16px;
+    z-index:1;
+    padding-bottom: 5%;
+}

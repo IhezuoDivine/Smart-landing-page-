@@ -228,11 +228,11 @@ nav a:hover{
 .box3{
     display: block;
     width: 100%;
+    background-color: var(--bg-color);
 }
 .clientbox{
     align-items: center;
     text-align: center;
-    margin-top: 5%;
     margin-bottom:5%;
     padding-bottom: 5%;
     padding-top: 5%;
@@ -312,7 +312,7 @@ nav a:hover{
         margin-top: -20%;
     }
     .box3{
-        margin-top: -35%;
+        margin-top: -23.3%;
     }
     .img{
         width: 200px;
